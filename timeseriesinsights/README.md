@@ -21,3 +21,33 @@
 ## Visualize Data
 
 ![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/timeseriesinsights/images/05_GoTo_TSI_Explorer.png "Visualize Data")
+
+
+![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/timeseriesinsights/images/06_Visual1.png "Visualize Data")
+
+
+![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/timeseriesinsights/images/05_GoTo_TSI_Explorer.png "Visualize Data")
+
+
+![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/timeseriesinsights/images/07_Visual2.png "Visualize Data")
+
+
+![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/timeseriesinsights/images/08_Visual3.png "Visualize Data")
+
+
+![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/timeseriesinsights/images/09_Visual09.png "Visualize Data")
+
+
+![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/timeseriesinsights/images/10_visual10.png "Visualize Data")
+
+
+![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/timeseriesinsights/images/11_visual11.png "Visualize Data")
+
+
+![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/timeseriesinsights/images/12_Visual12.png "Visualize Data")
+
+
+![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/timeseriesinsights/images/13_Visual13.png "Visualize Data")
+
+
+![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/timeseriesinsights/images/14_Visual_dashboard.png "Visualize Data")
