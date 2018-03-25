@@ -25,9 +25,9 @@
 ## Install Extenstion
 
 
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeAnalytics/images/07_Create_Data_Lake_Analytics_Install Extensions.png "Install Extensions")
+![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeAnalytics/images/07_Create_Data_Lake_Analytics_Install_Extensions.png "Install Extensions")
 
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeAnalytics/images/08_Create_Data_Lake_Analytics_Install Extensions_Success.png "Install Extensions")
+![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeAnalytics/images/08_Create_Data_Lake_Analytics_Install_Extensions_Success.png "Install Extensions")
 
 
 ## Submit Job using VS Code, Try Samples First to Learn through Data Lake Analytics
