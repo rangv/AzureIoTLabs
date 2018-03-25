@@ -17,7 +17,7 @@
 
 ## Create Event Grid and listen to Device Creation and Deletion events and notify
 
-[Azure IoTHub with Event Grid Lab](/EventGrid/README.md)
+[Azure IoTHub with Event Grid Lab](/EventGridLab/README.md)
 
 
 ## Use Stream Analytics to Stream Device Data To Data Lake Store. Learn about Authentication and Authorization using Azure Active Directory
@@ -29,8 +29,4 @@
 
 [Azure Date Lake Analytics Lab](/DatalakeAnalytics/README.md)
 
-
-## Stream Data To CosmosDB (Change Feeds Coming Soon!)
-
-[Cosmos DB Lab](/CosmosDB/README.md)
 
