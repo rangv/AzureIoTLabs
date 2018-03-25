@@ -63,10 +63,6 @@
 
 ![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeStore/images/17_Edit_Query.png "Edit Query")
 
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeStore/images/18_Save_Query.png "Edit Query")
-
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeStore/images/19_Save_Query_Yes.png "Save Query")
-
 
 ```sql
 SELECT
@@ -76,6 +72,11 @@ INTO
 FROM
     IotHub
 ```
+
+![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeStore/images/18_Save_Query.png "Edit Query")
+
+![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeStore/images/19_Save_Query_Yes.png "Save Query")
+
 
 
 
