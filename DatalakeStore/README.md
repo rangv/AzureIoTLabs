@@ -54,9 +54,9 @@
 
 ![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeStore/images/14_Save_Output.png "Add Output")
 
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeStore/images/14_Save_Output_2.png "Add Output")
+![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeStore/images/15_Save_Output_2.png "Add Output")
 
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeStore/images/14_Save_Output_3.png "Add Output")
+![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeStore/images/16_Save_Output_3.png "Add Output")
 
 
 ## Edit Query for Streaming Job, Stream Data from IoTHub to Datalake Store
