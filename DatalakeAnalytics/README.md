@@ -61,3 +61,24 @@
 ![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeAnalytics/images/19_VSCode_Open_Sample_Script_Input_Data.png "Run Samples")
 
 ![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeAnalytics/images/20_VSCode_Open_Sample_Script_Output_Data.png "Run Samples")
+
+
+
+## Create an Analytics Job against MXChip Data to convert JSON to CSV using U-SQL and Data Lake Analytics
+
+### Create a new mxchip_analytics.usql file in the project
+
+#### Register two assemblies Newtonsoft and Samples.formats. Download the dlls from /libs folder and register
+
+![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeAnalytics/images/21_Register_Assembly_Command.png "U-SQL Analytics")
+
+![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeAnalytics/images/22_Register_Sample_Formats.png "U-SQL Analytics")
+
+
+### Submit Job
+
+#### Submit Job to convert all JSON files to CSV files
+
+![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeAnalytics/images/23_SubmitJob.png "U-SQL Analytics")
+
+![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeAnalytics/images/24_Submitted_Jobs.png "U-SQL Analytics")
