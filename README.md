@@ -16,7 +16,7 @@
 
 #### Visualize Data sent from Device and Learn Time Series Insights Features
 
-[Time Series Insights Lab](/TimeSeriesInsights/README.md)
+[Time Series Insights Lab](/timeseriesinsights/README.md)
 
 
 #### Create Event Grid and listen to Device Creation and Deletion events and notify
