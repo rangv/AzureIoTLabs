@@ -68,6 +68,37 @@
 
 ### Create a new mxchip_analytics.usql file in the project
 
+
+```sql
+REFERENCE ASSEMBLY [Newtonsoft.Json];
+REFERENCE ASSEMBLY [Microsoft.Analytics.Samples.Formats]; 
+
+//Extract the Json string using a default Text extractor. 
+
+@json = 
+    EXTRACT jsonString string FROM @"/workshop/streaming/2018/03/{*}/{*}.json" USING Extractors.Tsv(quoting:false);
+
+//Use the JsonTuple function to get the Json Token of the string so it can be parsed later with Json .NET functions
+
+@jsonify = SELECT Microsoft.Analytics.Samples.Formats.Json.JsonFunctions.JsonTuple(jsonString) AS rec FROM @json;
+
+@columnized = SELECT 
+            rec["deviceId"] AS deviceId,
+            rec["temperature"] AS temperature,
+            rec["humidity"] AS humidity,
+            rec["time"] AS time
+    FROM @jsonify;
+
+
+
+//Output the file to a tool of your choice.
+
+OUTPUT @columnized
+TO @"/workshop/output/out.csv"
+USING Outputters.Csv();
+
+```
+
 #### Register two assemblies Newtonsoft and Samples.formats. Download the dlls from /libs folder and register
 
 ![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeAnalytics/images/21_Register_Assembly_Command.png "U-SQL Analytics")
