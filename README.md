@@ -30,3 +30,7 @@
 [Azure Date Lake Analytics Lab](/DatalakeAnalytics/README.md)
 
 
+
+## Use Device Simulator if you don't have a device or you want to test at scale
+
+[Device Simulator](/DeviceSimulator/README.md)
