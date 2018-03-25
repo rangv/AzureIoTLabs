@@ -26,11 +26,11 @@
 
 #### Use Stream Analytics to Stream Device Data To Data Lake Store. Learn about Authentication and Authorization using Azure Active Directory
 
-[Azure Date Lake Store Lab](/DataLakeStoreLab/README.md)
+[Azure Date Lake Store Lab](/DataLakeStore/README.md)
 
 
 #### Run U-SQL analytics job on the data collected from device into Data lake store. Learn Azure Data Lake Analytics features 
 
-[Azure Date Lake Analytics Lab](/DataLakeAnalyticsLab/README.md)
+[Azure Date Lake Analytics Lab](/DataLakeAnalytics/README.md)
 
 
