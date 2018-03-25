@@ -63,9 +63,20 @@
 
 ![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeStore/images/17_Edit_Query.png "Edit Query")
 
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeStore/images/18_Save_Query.png "Edit Output")
+![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeStore/images/18_Save_Query.png "Edit Query")
 
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeStore/images/19_Save_Query_Yes.png "Add Output")
+![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeStore/images/19_Save_Query_Yes.png "Save Query")
+
+
+```sql
+SELECT
+    *, System.Timestamp as time
+INTO
+    DatalakeStore
+FROM
+    IotHub
+```
+
 
 
 ## Start Streaming Analytics Job
