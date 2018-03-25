@@ -1,4 +1,4 @@
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeStore/images/datalakestore.jpeg "Header Image")
+![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeStore/images/datalakestore.jpg "Header Image")
 # Create Data Lake Store and Stream Data from IoTHub using Azure Stream Analytics
 
 #### Azure Data Lake Store is an enterprise-wide hyper-scale repository for big data analytic workloads. Azure Data Lake enables you to capture data of any size, type, and ingestion speed in one single place for operational and exploratory analytics
