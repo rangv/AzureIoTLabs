@@ -53,6 +53,7 @@ INTO
     CosmosDB
 FROM
     IotHub
+GROUP BY deviceId, TumblingWindow(second,30)
 ```
 
 ![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/CosmosDB/images/07_Edit_Query.png "Edit Query")
