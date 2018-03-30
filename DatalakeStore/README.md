@@ -36,6 +36,8 @@
 #### Create /workshop/streaming folder to store Streaming data coming from your device through IoTHub using Stream Analytics Job
 
 #### 
+#### Create /workshop folder
+#### 
 
 ![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeStore/images/04_Datalake_Store_Date_Explore_create_folder_workshop.png "Explore Data")
 
@@ -67,7 +69,7 @@
 
 #### 
 
-#### Add Input for Streaming Job, IotHub will be the input
+#### Add Input for Streaming Job
 
 #### 
 
@@ -75,31 +77,92 @@
 
 #### 
 
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeStore/images/10_Add_IoTHub.png "Add Input")
+#### Select IoTHub as Input
 
 #### 
 
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeStore/images/11_Save_IoTHub.png "Add Input")
+![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeStore/images/10_Add_IoTHub.png "Select Input")
 
 #### 
 
-## Add Output for Streaming Job, Data Lake Store will be the output
+#### Make sure to provide a consumer group. Each consumer group allows up to 5 output sinks/consumers. Make sure you create a new consumer group for every 5 output sinks and you can create up to 32 consumer groups.
 
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeStore/images/12_Add_Data_Lake_Store.png "Add Output")
+#### 
+
+![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeStore/images/11_Save_IoTHub.png "Save Input")
+
+#### 
+
+#### Add Data Lake Store as Output for Streaming Job
+
+#### 
+
+![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeStore/images/12_Add_Data_Lake_Store.png "Add Data Lake Store")
+
+#### 
+
+#### Select Data Lake Store as output sink
+
+#### 
 
 ![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeStore/images/13_Add_Output.png "Add Output")
 
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeStore/images/14_Save_Output.png "Add Output")
+#### 
 
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeStore/images/15_Save_Output_2.png "Add Output")
+#### Select the Data Lake Store account you created in previous steps and provide folder structure to stream data to the store
 
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeStore/images/16_Save_Output_3.png "Add Output")
+####
+
+#### /workshop/streaming/{date}/{time} with Date=YYYY/MM/DD format and Time=HH format will equate to /workshop/streaming/2018/03/30/11 on the store
+
+#### 
+
+![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeStore/images/14_Save_Output.png "Provide Folder Structure")
+
+#### 
+
+#### You will have to Authorize data lake store connection for Stream analytics to have access to be able to write to data lake store
+
+####
+
+####
+
+1. Multi-factor authentication based on OAuth2.0
+2. Integration with on-premises AD for federated authentication
+3. Role-based access control
+4. Privileged account management
+5. Application usage monitoring and rich auditing
+6. Security monitoring and alerting
+7. Fine-grained ACLs for AD identities
+
+####
+
+![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeStore/images/15_Save_Output_2.png "Authorize Stream Analytics to Data Lake Store")
+
+#### 
+
+#### You will see a popup and once the popup closes Authorize button will be greyed out after azuthorization is complete. There are exception cases where popup doesnt appear.In this case try again in incognito mode
+
+####
+
+![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeStore/images/16_Save_Output_3.png "Authorized")
 
 
-## Edit Query for Streaming Job, Stream Data from IoTHub to Datalake Store
+## Edit Stream Analytics Query
+
+#### 
+
+####   Edit Query for Streaming Job, Stream Data from IoTHub to Datalake Store
+
+####
 
 ![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeStore/images/17_Edit_Query.png "Edit Query")
 
+#### 
+
+####   Query
+
+####
 
 ```sql
 SELECT
@@ -110,24 +173,64 @@ FROM
     IotHub
 ```
 
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeStore/images/18_Save_Query.png "Edit Query")
+#### 
 
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeStore/images/19_Save_Query_Yes.png "Save Query")
+#### Save the query
 
+####
+
+![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeStore/images/18_Save_Query.png "Save Query")
+
+#### 
+
+#### Accept by pressing yes
+
+####
+
+![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeStore/images/19_Save_Query_Yes.png "Accept Save")
 
 
 
 ## Start Streaming Analytics Job
 
+#### 
+
+#### Start the stream job which will read data from IoTHub and store data in Data lake Store
+
+####
+
 ![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeStore/images/20_Start_Stream_Analytics_Job.png "Start Job")
 
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeStore/images/21_Start_custom.png "Start Job")
+#### 
+
+#### You can pick custom time to go back a few hours to pick up data from when your device has started streaming
+
+####
+
+![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeStore/images/21_Start_custom.png "Pick Custom Date")
+
+#### 
+
+#### Wait till job goes into running state, if you see errors could be from your query, make sure syntax is correct
+
+####
 
 ![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeStore/images/22_running.png "Job running")
 
 
 ## Explore Streaming Data
 
+#### 
+
+#### Go to Data Lake store data explorer and drill down to /workshop/streaming folder.You will see folders created with YYYY/MM/DD/HH format. 
+
+####
+
 ![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeStore/images/23_datalake_store_explore_streaming_data.png "Explore Streaming Data")
+#### 
+
+#### You will see json files, with one file per hour, explore the data
+
+####
 
 ![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeStore/images/24_datalake_file.png "Explore Streaming Data")
