@@ -1,7 +1,25 @@
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/IoTHub/images/iothub.jpg "Header Image")
-# Create IoTHub and Prepare IoTHub for End to End Solution
+# Azure IoT Hub
 
-### IoTHub: Connect, monitor, and manage billions of IoT assets
+![Imported Script](images/iothub.jpg "Header Image")
+
+Azure IoT Hub is a fully managed service that enables reliable and secure bidirectional communications between millions of IoT devices and a solution back end. Azure IoT Hub:
+
+* Provides multiple device-to-cloud and 
+* cloud-to-device communication options. These options include one-way messaging, file transfer, and request-reply methods.
+* Provides built-in declarative message routing to other Azure services.
+* Provides a queryable store for device metadata and synchronized state information.
+* Enables secure communications and access control using per-device security keys or X.509 certificates.
+* Provides extensive monitoring for device connectivity and device identity management events.
+* Includes device libraries for the most popular languages and platforms.
+
+<iframe src="https://channel9.msdn.com/Shows/Azure-Friday/Azure-IoT-Hub/player" width="480" height="270" allowFullScreen frameBorder="0"></iframe>
+
+
+
+## Create IoTHub and Stream Data to IoT Hub
+
+## IoTHub: Connect, monitor, and manage billions of IoT assets
+
 - Establish bi-directional communication with billions of IoT devices
 - Authenticate per device for security-enhanced IoT solutions
 - Register devices at scale with IoT Hub Device Provisioning Service
