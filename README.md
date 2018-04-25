@@ -2,8 +2,7 @@
 
 ## Labs using Azure Services to build Azure IoT End to End Solutions connecting real & simulated devices to Azure IoT Hub.  
 
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/images/Lab.png "Header Image")
-
+![Imported Script](images/Lab.png "Header Image")
 
 ## Create an IoTHub and prepare IoTHub for end to end solution
 
