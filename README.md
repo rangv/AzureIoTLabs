@@ -1,6 +1,6 @@
 # Azure IoT Hands on Labs
 
-## Labs using Azure Services to build Azure IoT End to End Solutions connecting real & simulated devices to Azure IoT Hub.  
+Labs using Azure Services to build Azure IoT End to End Solutions connecting real & simulated devices to Azure IoT Hub.  
 
 ![Imported Script](images/Lab.png "Header Image")
 
