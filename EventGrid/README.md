@@ -1,49 +1,38 @@
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/EventGrid/images/eventgrid.jpg "Header Image")
-# Capture Device Creation/Deletion using Event Grid and Send Email using Logic Apps
+# Capture Device Events using Event Grid and Notify
 
-#### Azure IoT Hub integrates with Azure Event Grid so that you can send event notifications to other services and trigger downstream processes. Configure your business applications to listen for IoT Hub events so that you can react to critical events in a reliable, scalable, and secure manner. For example, build an application to perform multiple actions like updating a database, creating a ticket, and delivering an email notification every time a new IoT device is registered to your IoT hub
+![Header Image](images/eventgrid.jpg)
 
+Azure IoT Hub integrates with Azure Event Grid so that you can send event notifications to other services and trigger downstream processes. Configure your business applications to listen for IoT Hub events so that you can react to critical events in a reliable, scalable, and secure manner. For example, build an application to perform multiple actions like updating a database, creating a ticket, and delivering an email notification every time a new IoT device is registered to your IoT hub.
+
+<iframe src="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Azure-IoT-Hub-Integration-with-Azure-Event-Grid/player" width="480" height="270" allowFullScreen frameBorder="0"></iframe>
+
+In this lab you will learn how to
+
+* Create logic app to be able to send email notifications
+
+* Create Event Grid
+
+* Connect IoT Hub to Event Grid
 
 ## Create Logic App
 
-####
+Create a Logic App to be able to send email notifications
 
-#### Create a Logic App to be able to send emails
+![Create Logic App](images/01_Create_Logic_App.png)
 
-####
+Use existing resource group created in previous steps and press Create
 
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/EventGrid/images/01_Create_Logic_App.png "Create Logic App")
+![Create Logic App](images/02_Create_LogicApp_Submit.png)
 
-####
+Using Logic App Designer, Create New App
 
-#### Use existing resource group created in previous steps and press Create
+![Create App](images/03_Logic_App_designer.png)
 
-####
+Select HTTP Request
 
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/EventGrid/images/02_Create_LogicApp_Submit.png "Create Logic App")
+![Select HTTP Request](images/04_Http_Request.png)
 
-####
-
-#### Using Logic App Designer, Create New App
-
-####
-
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/EventGrid/images/03_Logic_App_designer.png "Create App")
-
-####
-
-#### Select HTTP Request
-
-####
-
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/EventGrid/images/04_Http_Request.png "Select HTTP Request")
-
-
-####
-
-#### Provide a Sample Payload
-
-####
+Provide a Sample Payload
 
 ```code
 [{
@@ -92,139 +81,72 @@
 }]
 ```
 
-####
-
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/EventGrid/images/05_Sample_Payload.png "Provide Sample Payload")
-
-####
-
-
+![Provide Sample Payload](images/05_Sample_Payload.png)
 
 ## Setup Notification by Sending Email 
 
-####
+Click on New Step
 
-#### Click on New Step
+![New Step](images/06_New_Step.png)
 
-####
+Add an action
 
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/EventGrid/images/06_New_Step.png "New Step")
+![Add an Action](images/07_Add_new_Action.png)
 
-####
+Choose Mail
 
-#### Add an action
+![Choose Mail](images/08_Choose_Mail.png)
 
-####
+Finish Mail Actions
 
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/EventGrid/images/07_Add_new_Action.png "Add an Action")
+![Finish Mail Actions](images/09_send_email.png)
 
-####
+Sign in to email
 
-#### Choose Mail
+![Sign in to email](images/10_signin_to_email.png)
 
-####
+Create Email template
 
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/EventGrid/images/08_Choose_Mail.png "Choose Mail")
-
-####
-
-#### Finish Mail Actions
-
-####
-
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/EventGrid/images/09_send_email.png "Finish Mail Actions")
-
-####
-
-#### Sign in to email
-
-####
-
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/EventGrid/images/10_signin_to_email.png "Sign in to email")
-
-####
-
-#### Create Email template
-
-####
-
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/EventGrid/images/11_Send_Email.png "Create email template")
-
+![Create email template](images/11_Send_Email.png)
 
 ## Copy Request URL
 
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/EventGrid/images/12_eventurl.png "Copy Request URL")
-
+![Copy Request URL](images/12_eventurl.png)
 
 ## Integrate With IoTHub
 
-####
+Integrate Logic App with IoTHub via Event Grid
 
-#### Integrate Logic App with IoTHub via Event Grid
+![Imported Script](images/13_IoTHub_EventHub.png "Integrated with IoTHub")
 
-####
+Click on Event Subscription
 
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/EventGrid/images/13_IoTHub_EventHub.png "Integrated with IoTHub")
+![Integrated with IoTHub](images/14_empty_event_subscription.png "")
 
-####
+Copy the URL from previous steps into Subscriber Endpoint and click create
 
-#### Click on Event Subscription
-
-####
-
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/EventGrid/images/14_empty_event_subscription.png "Integrated with IoTHub")
-
-####
-
-#### Copy the URL from previous steps into Subscriber Endpoint and click create
-
-####
-
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/EventGrid/images/15_device_events.png "Integrated with IoTHub")
-
+![Integrated with IoTHub](images/15_device_events.png)
 
 ## Add Device and Test Notification
 
-####
+Go To IoTHub -> IoT Devices (Device Management) -> Add
 
-#### Go To IoTHub -> IoT Devices (Device Management) -> Add
+![Add Device](images/16_add_device.png)
 
-####
+Click Save button to create a new device
 
+![Add Device](images/17_add_device.png)
 
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/EventGrid/images/16_add_device.png "Add Device")
+You Should get an email notification
 
-####
-
-#### Click Save button to create a new device
-
-####
-
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/EventGrid/images/17_add_device.png "Add Device")
-
-####
-
-#### You Should get an email notification
-
-####
-
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/EventGrid/images/18_email_generated.png "Email Notification")
-
+![Email Notification](images/18_email_generated.png)
 
 ## Delete Device and Test Notification
 
-####
+Go To IoTHub -> IoT Devices (Device Management) -> Select Device you created in previous step -> Delete
 
-#### Go To IoTHub -> IoT Devices (Device Management) -> Select Device you created in previous step -> Delete
+![Delete Device](images/19_delete_device.png)
 
-####
+You Should get an email notification
 
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/EventGrid/images/19_delete_device.png "Delete Device")
-
-####
-
-#### You Should get an email notification
-
-####
-
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/EventGrid/images/20_email_generated.png "Email Notification")
+![Email Notification](images/20_email_generated.png)
