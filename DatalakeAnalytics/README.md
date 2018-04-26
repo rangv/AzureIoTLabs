@@ -26,6 +26,7 @@ Click on **Data + Analytics**
 
 ![Create Datalake Analytics Service](images/dataanalytics.png)
 
+Click on **Data Lake Analytics**
 
 ![Create Datalake Analytics Service](images/01_Create_Data_Lake_Analytics_Service.png)
 
