@@ -10,13 +10,13 @@ Labs using Azure Services to build Azure IoT End to End Solutions connecting rea
 
 **Duration**: 60-90 minutes
 
-[Azure IoTHub Lab](/IoTHub/README.md)
+[Azure IoTHub Lab with MXChip](/IoTHub/README.md)
 
 ### Module 2: Connect Pi Simulator to IoT Hub
 
 **Duration**: 30 minutes
 
-[Azure IoTHub Lab](/IoTHub-PiSimulator/README.md)
+[Azure IoTHub Pi Simulator Lab](/IoTHub-PiSimulator/README.md)
 
 ### Module 3: Create Azure Time Series Insights and Visualize Device Data
 

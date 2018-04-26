@@ -1,5 +1,6 @@
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/CosmosDB/images/cosmosdb.jpg "Header Image")
-# Create Cosmosdb and Store Data
+# Hot Path Analytics with CosmosDB and Azure Stream Analytics
+
+![Header Image](images/cosmosdb.jpg)
 
 #### Learn how to set up a CosmosDB and Store Time Series Data
 
