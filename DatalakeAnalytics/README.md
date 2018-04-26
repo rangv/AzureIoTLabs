@@ -1,205 +1,126 @@
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeAnalytics/images/datalakeanalytics.png "Header Image")
-# Create Data Lake Analytics Service and run U-SQL jobs
+# Batch Analytics
 
-#### Learn how to use Data Lake Analytics to run big data analysis jobs that scale to massive data sets. Tutorials and other documentation show you how to create and manage batch, real-time, and interactive analytics jobs, and how to query using the U-SQL language
+## Batch Analytics with Data Lake Analytics Service
 
+![Header Image](images/datalakeanalytics.png)
+
+Process big data jobs in seconds with Azure Data Lake Analytics. There is no infrastructure to worry about because there are no servers, virtual machines, or clusters to wait for, manage, or tune. Instantly scale the processing power, measured in Azure Data Lake Analytics Units (AU), from one to thousands for each job. You only pay for the processing that you use per job.
+
+U-SQL is a simple, expressive, and extensible language that allows you to write code once and have it automatically parallelized for the scale you need. Process petabytes of data for diverse workload categories such as querying, ETL, analytics, machine learning, machine translation, image processing, and sentiment analysis by leveraging existing libraries written in .NET languages, R, or Python.
+
+In this lab Learn how to 
+
+* use Data Lake Analytics to run big data analysis jobs that scale to massive data sets
+* how to create and manage batch, real-time, and interactive analytics jobs, and 
+* how to query using the U-SQL language
 
 ## Create Azure Data Lake Analytics Service
 
+Create Data Lakae Analytics service to mine data stored in Data Lake Store.
 
-####
+Click on **Create a resource**
 
-#### Create Data Lakae Analytics service to mine data stored in Data Lake Store
+![Create Datalake Analytics Service](images/create_resource.png)
 
-####
+Click on **Data + Analytics**
 
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeAnalytics/images/01_Create_Data_Lake_Analytics_Service.png "Create Datalake Analytics Service")
+![Create Datalake Analytics Service](images/dataanalytics.png)
 
-####
 
-#### Pick the Data Lake Store where device telemetry data is being stored from Stream Analytics job
+![Create Datalake Analytics Service](images/01_Create_Data_Lake_Analytics_Service.png)
 
-####
+Pick the Data Lake Store where device telemetry data is being stored from Stream Analytics job
 
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeAnalytics/images/02_Create_Data_Lake_Pick_Store.png "Pick A Store")
+![Pick A Store](images/02_Create_Data_Lake_Pick_Store.png)
 
-####
+Use existing resource group and click on Create button
 
-#### Use existing resource group and click on Create button
-
-####
-
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeAnalytics/images/03_Create_Data_Lake_Analytics_Success.png "Create Service")
-
+![Create Service](images/03_Create_Data_Lake_Analytics_Success.png)
 
 ## Create Sample Data and Install Extensions
 
-####
+Click on Sample scripts 
 
-#### Click on Sample scripts 
+![Create Sample Data](images/04_Create_Data_Lake_Analytics_Sample_Scripts.png)
 
-####
+Click on sample data missing button to create sample data in Data lake Store 
 
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeAnalytics/images/04_Create_Data_Lake_Analytics_Sample_Scripts.png "Create Sample Data")
+![Create Sample Data](images/05_Create_Data_Lake_Analytics_Sample_Data.png)
 
-####
+You should see successful message after data is copied
 
-#### Click on sample data missing button to create sample data in Data lake Store 
+![Create Sample Data](images/06_Create_Data_Lake_Analytics_Sample_Data_Successful.png)
 
-####
+Install Extensions
 
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeAnalytics/images/05_Create_Data_Lake_Analytics_Sample_Data.png "Create Sample Data")
+![Install Extensions](images/07_Create_Data_Lake_Analytics_Install_Extensions.png)
 
-####
+Successful Extension installation
 
-#### You should see successful message after data is copied
-
-####
-
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeAnalytics/images/06_Create_Data_Lake_Analytics_Sample_Data_Successful.png "Create Sample Data")
-
-####
-
-#### Install Extensions
-
-####
-
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeAnalytics/images/07_Create_Data_Lake_Analytics_Install_Extensions.png "Install Extensions")
-
-####
-
-#### Successful Extension installation
-
-####
-
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeAnalytics/images/08_Create_Data_Lake_Analytics_Install_Extensions_Success.png "Install Extensions")
-
-####
+![Install Extensions](images/08_Create_Data_Lake_Analytics_Install_Extensions_Success.png)
 
 
 ## VS Code Integration
 
-####
+Submit Job using VS Code, Try Samples First to Learn through Data Lake Analytics
 
-### Submit Job using VS Code, Try Samples First to Learn through Data Lake Analytics
+Install VS Code Extension for Data Lake Analytics
 
-####
-
-#### Install VS Code Extension for Data Lake Analytics
-
-####
-
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeAnalytics/images/data-lake-tools-for-vscode-extensions.png "Install Extensions")
-
-####
+![Install Extensions](images/data-lake-tools-for-vscode-extensions.png)
 
 ### Run Samples
 
-####
+Run Samples to learn Data Lake Analytics
 
-#### Run Samples to learn Data Lake Analytics
+![Run Samples](images/09_VSCode_Open_Sample_Script.png)
 
-####
+Compile Script
 
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeAnalytics/images/09_VSCode_Open_Sample_Script.png "Run Samples")
+![Compile Script](images/10_VSCode_Open_Sample_Script_Compile.png)
 
-####
+Click on List more accounts
 
-#### Compile Script
+![Run Samples]images/11_VSCode_Open_Sample_Script_Compile_Select_Account.png)
 
-####
+Select a Data Lake Analytics Account
 
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeAnalytics/images/10_VSCode_Open_Sample_Script_Compile.png "Compile Script")
+![Select Account](images/12_VSCode_Open_Sample_Script_Compile_Account.png)
 
-####
+Select master key
 
-#### Click on List more accounts
-####
+![Select master key](images/13_VSCode_Open_Sample_Script_Compile_master.png)
 
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeAnalytics/images/11_VSCode_Open_Sample_Script_Compile_Select_Account.png "Run Samples")
+Compile as USQL
 
-####
+![Compile USQL](images/14_VSCode_Open_Sample_Script_Compile_usql.png)
 
-#### Select a Data Lake Analytics Account
+USQL script should be compiled
 
-####
+![Compiled USQL](images/15_VSCode_Open_Sample_Script_Compile_submit.png)
 
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeAnalytics/images/12_VSCode_Open_Sample_Script_Compile_Account.png "")
+Submit Job To Run
 
-####
+![Submit Job](images/16_VSCode_Open_Sample_Script_Submit_Job.png)
 
-#### Select master key
+Default priority is 1000 and number default number of nodes to run the script are 5
 
-####
+![Submit Job Success](images/17_VSCode_Open_Sample_Script_Submit_Job_success.png)
 
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeAnalytics/images/13_VSCode_Open_Sample_Script_Compile_master.png "Run Samples")
+Job Success with Job Analytics
 
-####
+![Job Success](images/18_VSCode_Open_Sample_Script_Submit_Job_success_portal.png)
 
-#### Compile as USQL
+View Input File
 
-####
+![Veiw Input File](images/19_VSCode_Open_Sample_Script_Input_Data.png)
 
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeAnalytics/images/14_VSCode_Open_Sample_Script_Compile_usql.png "Run Samples")
+View Output File
 
-####
-
-#### USQL script should be compipled
-
-####
-
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeAnalytics/images/15_VSCode_Open_Sample_Script_Compile_submit.png "Run Samples")
-
-####
-
-#### Submit Job To Run
-
-####
-
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeAnalytics/images/16_VSCode_Open_Sample_Script_Submit_Job.png "Run Samples")
-
-####
-
-#### Default priority is 1000 and number default number of nodes to run the script are 5
-
-####
-
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeAnalytics/images/17_VSCode_Open_Sample_Script_Submit_Job_success.png "Run Samples")
-
-####
-
-#### Job Success with Job Analytics
-
-####
-
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeAnalytics/images/18_VSCode_Open_Sample_Script_Submit_Job_success_portal.png "Run Samples")
-
-####
-
-#### View Input File
-
-####
-
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeAnalytics/images/19_VSCode_Open_Sample_Script_Input_Data.png "Run Samples")
-
-####
-
-#### View Output File
-
-####
-
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeAnalytics/images/20_VSCode_Open_Sample_Script_Output_Data.png "Run Samples")
-
-####
+![View Output File](images/20_VSCode_Open_Sample_Script_Output_Data.png)
 
 ## Create an Analytics Job against MXChip Data to convert JSON to CSV using U-SQL and Data Lake Analytics
 
-####
-
 ### Create a new mxchip_analytics.usql file in the project
-
-####
-
 
 ```sql
 REFERENCE ASSEMBLY [Newtonsoft.Json];
@@ -231,37 +152,20 @@ USING Outputters.Csv();
 
 ```
 
-####
+Register two assemblies Newtonsoft and Samples.formats. Download the dlls from /libs folder and register
 
-#### Register two assemblies Newtonsoft and Samples.formats. Download the dlls from /libs folder and register
+![U-SQL Analytics](images/21_Register_Assembly_Command.png)
 
-####
+Select the dlls from the /libs folder
 
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeAnalytics/images/21_Register_Assembly_Command.png "U-SQL Analytics")
-
-####
-
-#### Select the dlls from the /libs folder
-
-####
-
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeAnalytics/images/22_Register_Sample_Formats.png "U-SQL Analytics")
-
-####
-
+![U-SQL Analytics](images/22_Register_Sample_Formats.png)
 
 ### Submit Job
 
-#### Submit Job to convert all JSON files to CSV files
+Submit Job to convert all JSON files to CSV files
 
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeAnalytics/images/23_SubmitJob.png "U-SQL Analytics")
+![U-SQL Analytics](images/23_SubmitJob.png)
 
-####
+View Jobs
 
-#### View Jobs
-
-####
-
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DatalakeAnalytics/images/24_Submitted_Jobs.png "U-SQL Analytics")
-
-####
+![U-SQL Analytics](images/24_Submitted_Jobs.png)
