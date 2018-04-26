@@ -1,4 +1,4 @@
-# Connect IoTHub to PI Simulator
+# Connect PI Simulator to IoT Hub
 
 ![IoT Hub](images/pi_simulator.png)
 
