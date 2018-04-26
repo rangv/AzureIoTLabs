@@ -1,28 +1,40 @@
-# Device Simulator
+# Load test with Device Simulator
 
-#### Learn how to set up a Device Simulator using Azure IoT Suite and Connect to IoTHub
-
+Learn how to set up a Device Simulator using Azure IoT Suite and Connect to IoTHub
 
 ## Create Device Simulator
 
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DeviceSimulator/images/01_create_new_solution.png "Create Device Simulator")
+Go To [Azure IoT Suite](https://www.azureiotsuite.com)
 
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DeviceSimulator/images/02_select_device_simulation.png "Select Device Simulator")
 
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DeviceSimulator/images/03_create_device_simulator.png "Select Device Simulator")
+![Create Device Simulator](images/01_create_new_solution.png)
 
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DeviceSimulator/images/04_launch_simulator.png "Launch Device Simulator")
+Select Device simulation
 
+![Imported Script](images/02_select_device_simulation.png "Select Device Simulator")
+
+Create the solution
+
+![Select Device Simulator](images/03_create_device_simulator.png )
+
+Launch Device Simulator
+
+![Launch Device Simulator](images/04_launch_simulator.png)
 
 ## Stream Data to IoTHub
 
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DeviceSimulator/images/06_get_connection_string.png "Get Connection String")
+Get connection string of IoT Hub
 
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DeviceSimulator/images/07_simulate_data.png "Simulate Data")
+![Get Connection String](images/06_get_connection_string.png)
 
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DeviceSimulator/images/08_start_simulation.png "Start Simulation")
+Setup simulation with sensors and number of devices
 
+![Simulate Data](images/07_simulate_data.png)
+
+Select the frequency of data flowing into IoT Hub 
+
+![Imported Script](images/08_start_simulation.png "Start Simulation")
 
 ## New Devices Created in IoTHub
 
-![Imported Script](https://github.com/rangv/AzureIoTLabs/blob/master/DeviceSimulator/images/09_simulated_devices.png "Simulation Devices")
+![Simulation Devices](images/09_simulated_devices.png)
