@@ -6,6 +6,13 @@
 
 Azure Time Series Insights is a fully managed analytics, storage, and visualization service for managing IoT-scale time-series data in the cloud. It provides massively scalable time-series data storage and enables you to explore and analyze billions of events streaming in from all over the world in seconds. Use Time Series Insights to store and manage terabytes of time-series data, explore and visualize billions of events simultaneously, conduct root-cause analysis, and to compare multiple sites and assets.
 
+Time Series Insights has four key jobs:
+
+* First, it's fully integrated with cloud gateways like Azure IoT Hub and Azure Event Hubs. It easily connects to these event sources and parses JSON from messages and structures that have data in clean rows and columns. It joins metadata with telemetry and indexes your data in a columnar store.
+* Second, Time Series Insights manages the storage of your data. To ensure data is always easily accessible, it stores your data in memory and SSD’s for up to 400 days. You can interactively query billions of events in seconds – on demand.
+* Third, Time Series Insights provides out-of-the-box visualization via the TSI explorer. 
+* Fourth, Time Series Insights provides a query service, both in the TSI explorer and by using APIs that are easy to integrate for embedding your time series data into custom applications.
+
 <iframe src="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Time-Series-Insight-for-IoT-apps/player" width="480" height="270" allowFullScreen frameBorder="0"></iframe>
 
 In this lab you will learn
@@ -13,6 +20,7 @@ In this lab you will learn
 * how to set up a Time Series Insights environment
 * explore
 * analyze time series data of your IoT solutions or connected things
+
 
 Click on **Create a Resource** and click on **Internet of Things**
 
@@ -101,3 +109,11 @@ Create a Chart by adding a predicate
 Perspective with 4 different charts and also changed Title
 
 ![Visualize Data](images/14_Visual_dashboard.png)
+
+Click on Heatmap
+
+![Visualize Data](images/heatmap.png)
+
+View data in a table
+
+![Visualize Data](images/table.png)
