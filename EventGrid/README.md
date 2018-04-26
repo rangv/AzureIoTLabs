@@ -18,7 +18,17 @@ In this lab you will learn how to
 
 Create a Logic App to be able to send email notifications
 
-![Create Logic App](images/01_Create_Logic_App.png)
+Click on **Create a resource**
+
+![Create Resource](images/create_resource.png)
+
+Click on **Enterprise Integration**
+
+![Enterprise Integration](images/enterprise_integration.png)
+
+Click on **Logic Apps**
+
+![Create Logic App](images/logic_app.png)
 
 Use existing resource group created in previous steps and press Create
 
