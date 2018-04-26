@@ -1,40 +1,55 @@
 # Azure IoT Hands on Labs
 
-Labs using Azure Services to build Azure IoT End to End Solutions connecting real & simulated devices to Azure IoT Hub.  
+Labs using Azure Services to build Azure IoT End to End Solutions connecting real & simulated devices to Azure IoT Hub.
 
 ![Imported Script](images/Lab.png "Header Image")
 
-### Create an IoTHub and prepare IoTHub for end to end solution
+## Modules
+
+### Module 1: Introduction to Azure IoT Hub and Connect MXChip
+
+**Duration**: 60-90 minutes
 
 [Azure IoTHub Lab](/IoTHub/README.md)
 
+### Module 2: Connect Pi Simulator to IoT Hub
 
-### Visualize Data sent from Device and Learn Time Series Insights Features
+**Duration**: 30 minutes
+
+[Azure IoTHub Lab](/IoTHub-PiSimulator/README.md)
+
+### Module 3: Create Azure Time Series Insights and Visualize Device Data
+
+**Duration**: 60 minutes
 
 [Time Series Insights Lab](/timeseriesinsights/README.md)
 
+### Module 4: Capture Device Events and Send Notifications
 
-### Create Event Grid and listen to Device Creation and Deletion events and notify
+**Duration**: 30 minutes
 
 [Azure IoTHub with Event Grid Lab](/EventGrid/README.md)
 
+### Module 5: Cold Path Storage
 
-### Use Stream Analytics to Stream Device Data To Data Lake Store. Learn about Authentication and Authorization using Azure Active Directory
+**Duration**: 60-90 minutes
 
 [Azure Date Lake Store Lab](/DatalakeStore/README.md)
 
+### Module 6: Hot Path Analytics
 
-### Use Stream Analytics to Stream Device Data To Cosmos DB. 
+**Duration**: 60 minutes
 
-[Azure Date Lake Store Lab](/CosmosDB/README.md)
+[Cosmos DB Lab](/CosmosDB/README.md)
 
+### Module 7: Batch Analytics
 
-### Run U-SQL analytics job on the data collected from device into Data lake store. Learn Azure Data Lake Analytics features 
+**Duration**: 60 minutes
 
 [Azure Date Lake Analytics Lab](/DatalakeAnalytics/README.md)
 
+### Module 8: Load Test using Device Simulator
 
-
-### Use Device Simulator if you don't have a device or you want to test at scale
+**Duration**: 30 minutes
 
 [Device Simulator](/DeviceSimulator/README.md)

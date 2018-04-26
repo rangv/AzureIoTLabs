@@ -1,4 +1,6 @@
-# Create Data Lake Store and Stream Data from IoTHub using Azure Stream Analytics
+# Cold Path Storage
+
+## Create Data Lake Store and Stream Data from IoTHub using Azure Stream Analytics
 
 ![Header Image](images/datalakestore.jpg)
 
@@ -59,7 +61,6 @@ You should have the folder structure below in place to start streaming data to d
 Azure Stream Analytics is a managed event-processing engine set up real-time analytic computations on streaming data. The data can come from devices, sensors, web sites, social media feeds, applications, infrastructure systems, and more
 
 <iframe src="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Stream-Analytics-in-IoT-solutions/player" width="480" height="270" allowFullScreen frameBorder="0"></iframe>
-
 
 Create a hyper scale data lake store to store IoT Data. Click on **Create a resource**
 
