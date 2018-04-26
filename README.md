@@ -26,7 +26,7 @@ Labs using Azure Services to build Azure IoT End to End Solutions connecting rea
 
 ### Use Stream Analytics to Stream Device Data To Cosmos DB. 
 
-[Azure Date Lake Store Lab](/DatalakeStore/README.md)
+[Azure Date Lake Store Lab](/CosmosDB/README.md)
 
 
 ### Run U-SQL analytics job on the data collected from device into Data lake store. Learn Azure Data Lake Analytics features 
