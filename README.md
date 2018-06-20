@@ -53,3 +53,10 @@ Labs using Azure Services to build Azure IoT End to End Solutions connecting rea
 **Duration**: 30 minutes
 
 [Device Simulator](/DeviceSimulator/README.md)
+
+
+### Module 9: Configure and monitor IoT devices at scale
+
+**Duration**: 30 minutes
+
+[Automatic Device Configuration](/automaticdeviceconfiguration/README.md)
