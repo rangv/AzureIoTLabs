@@ -6,7 +6,7 @@ Automatic device management in Azure IoT Hub automates many of the repetitive an
 
 ![Building Blocks](images/buildingblocks.png)
 
-<iframe src="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Azure-IoT-Hub-automatic-device-configuration" width="480" height="270" allowFullScreen frameBorder="0"></iframe>
+<iframe src="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Azure-IoT-Hub-automatic-device-configuration/player" width="480" height="270" allowFullScreen frameBorder="0"></iframe>" width="480" height="270" allowFullScreen frameBorder="0"></iframe>
 
 In this lab you will learn how to
 
