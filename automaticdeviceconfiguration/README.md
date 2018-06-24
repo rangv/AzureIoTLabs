@@ -99,6 +99,18 @@ You may create a metric for pending settings changes, a metric for errors, and a
 
 3. Select Next to move to step four.
 
+```sql
+SELECT deviceId FROM devices WHERE properties.reported.hvacsettings.status='pending'}
+```
+
+```sql
+SELECT deviceId FROM devices WHERE configurations.[[shinagawahvacsetting]].status='Applied' AND properties.reported.hvacsettings.status='Applied'
+```
+
+```sql
+SELECT deviceId FROM devices WHERE configurations.[[shinagawahvacsetting]].status='Error'
+```
+
 ![Create App](images/step3.png)
 
 ### Step 4: Target Devices
