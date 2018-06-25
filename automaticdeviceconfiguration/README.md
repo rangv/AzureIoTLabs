@@ -137,7 +137,7 @@ Results of applied changes
 
 ![Create App](images/result.png)
 
-Check device twin to see the configuration updates. Go to **IoT Devices**, click on **shinagawahvac1** and click on **device twin**.
+Check device twin to see the configuration updates. Go to **IoT Devices**, click on **shinagawahvac1** and click on **device twin**. Similarly check all devices located in **Shinagawa**
 
 ![Create App](images/devicetwinupdate.png)
 
