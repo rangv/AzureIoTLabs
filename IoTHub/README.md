@@ -20,7 +20,8 @@ Azure IoT Hub is a fully managed service that enables reliable and secure bidire
 * **Manage** your IoT devices at scale with device management
 * **Extend** the power of the cloud to your edge device
 
-<iframe src="https://channel9.msdn.com/Shows/Azure-Friday/Azure-IoT-Hub/player" width="480" height="270" allowFullScreen frameBorder="0"></iframe>
+[![Azure IoT Hub](images/iothubvideo.PNG)](https://channel9.msdn.com/Shows/Azure-Friday/Azure-IoT-Hub/player)
+
 
 ### In this lab you will
 
